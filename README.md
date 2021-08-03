@@ -26,7 +26,7 @@ layout disponibilizado pela RocketSeat.
 
 Clone Project ]
 ```
-$ git clone https://github.com/AndreBento/ignite-mobile-rentx.git
+$ git clone https://github.com/Fpos0/RentX-Mobile-Ignite.git
 ```
 
 ```
