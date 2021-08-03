@@ -24,7 +24,7 @@ layout disponibilizado pela RocketSeat.
 
 ## 🚀 Como executar o projeto (dev) / Getting Started
 
-Clone Project ]
+Clone Project 
 ```
 $ git clone https://github.com/Fpos0/RentX-Mobile-Ignite.git
 ```
@@ -44,9 +44,6 @@ $ yarn api
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
-
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
-
 
 -   **[Axios](https://github.com/axios/axios)**
 -   **[JSON Server](https://github.com/typicode/json-server)**
