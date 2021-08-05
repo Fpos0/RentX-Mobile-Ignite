@@ -1,5 +1,6 @@
-# PetFriends
+# RentX
 
+<img src="./public/RentX%20Ignite.svg">
 
 ## 💻 Sobre o projeto
   Rentx é um aplicativo para locação de carros.
@@ -23,9 +24,9 @@ layout disponibilizado pela RocketSeat.
 
 ## 🚀 Como executar o projeto (dev) / Getting Started
 
-Clone Project ]
+Clone Project 
 ```
-$ git clone https://github.com/AndreBento/ignite-mobile-rentx.git
+$ git clone https://github.com/Fpos0/RentX-Mobile-Ignite.git
 ```
 
 ```
@@ -44,9 +45,6 @@ $ yarn api
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
-
-
 -   **[Axios](https://github.com/axios/axios)**
 -   **[JSON Server](https://github.com/typicode/json-server)**
 -   **[ReactNative](https://reactnative.dev/)**
@@ -54,20 +52,26 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Expo](https://expo.io/)**
 -   **[Styled Component](https://styled-components.com/)**
 
-<h1 align="center">
+
+## Imagens 
+<h3 >
   Selecionando Data
-  <img alt="Selecionando Data" title="Selecionando Data" src="./public/telas/Dataescolhida.png" />
-</h1>
+</h3>
+ <img alt="Selecionando Data" title="Selecionando Data" src="./public/telas/Dataescolhida.png" width="200"/>
 
-<h1 align="center">
+  
+
+<h3>
   Detalhes do Carro
-  <img alt="Detalhes do Carro" title="Detalhes do Carro" src="./public/telas/Detalhes.png" />
-</h1>
+ </h3>
+    <img alt="Detalhes do Carro" title="Detalhes do Carro" src="./public/telas/Detalhes.png" width="200" />
+ 
 
-<h1 align="center">
+
+<h3>
   Agendamentos
-  <img alt="Agendamentos" title="Agendamentos" src="./public/telas/Agendamentos.png" />
-</h1>
+</h3>
+  <img alt="Agendamentos" title="Agendamentos" src="./public/telas/Agendamentos.png"  width="200"/>
 
 ### Autor
 ---
