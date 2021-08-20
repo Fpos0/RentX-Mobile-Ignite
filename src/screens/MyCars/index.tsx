@@ -19,7 +19,7 @@ import {
   CarFooterDate
 } from './styles';
 import { BackButton } from '../../components/BackButton';
-import { Load } from '../../components/Load';
+import { LoadAnimation } from '../../components/LoadAnimation';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useTheme } from 'styled-components';
 import { Car } from '../../components/Car'
@@ -83,7 +83,7 @@ export function MyCars() {
           Conforto, segurança e algo ai
         </Subtitle>
       </Header>
-      {loading ? <Load /> :
+      {loading ? <LoadAnimation /> :
 
 
         <Content>
@@ -94,7 +94,7 @@ export function MyCars() {
 
           <FlatList
             data={cars}
-            keyExtractor={item => item.id}
+            keyExtractor={item => String(item.id)}
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <CarWrapper>
