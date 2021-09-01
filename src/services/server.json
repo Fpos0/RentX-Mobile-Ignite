@@ -311,7 +311,10 @@
         "2021-08-07",
         "2021-08-05",
         "2021-08-06",
-        "2021-08-05"
+        "2021-08-05",
+        "2021-08-27",
+        "2021-08-28",
+        "2021-08-29"
       ]
     },
     {
@@ -521,6 +524,55 @@
       "startDate": "05/08/2021",
       "endDate": "05/08/2021",
       "id": 3
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "ffb71f55-818a-48b1-b7d2-2efc406ede25",
+        "brand": "Chevrolet ",
+        "name": "Celta 2016",
+        "about": "Com motor de 1,0 litro e oito válvulas, o Celta desenvolve 78 cv de potência e 9,7 kgfm de torque máximo quando abastecido com o etanol. Com gasolina, chega aos 77 cv de potência e oferece 9,5 kgfm de torque. Seu câmbio é manual de cinco marchas",
+        "rent": {
+          "period": "Ao dia",
+          "price": 100
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "http://www.ionline.com.br/wp-content/uploads/2015/09/celta-2015-5.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "315km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "2.9s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "700 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasoline"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "4 pessoas"
+          }
+        ],
+        "photos": [
+          "http://www.ionline.com.br/wp-content/uploads/2015/09/celta-2015-5.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/2.pngg",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/5.png"
+        ]
+      },
+      "startDate": "27/08/2021",
+      "endDate": "29/08/2021",
+      "id": 4
     }
   ]
 }

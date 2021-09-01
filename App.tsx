@@ -1,12 +1,9 @@
 import React from 'react';
 import AppLoading from 'expo-app-loading';
-
-// import { Home } from './src/screens/Home';
-// import { CarDetails } from './src/screens/CarDetails';
 import { Routes } from './src/routes';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
-
+import { AppProvider } from './src/hooks';
 import {
   useFonts,
   Archivo_400Regular,
@@ -34,7 +31,9 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Routes />
+      <AppProvider>
+        <Routes />
+      </AppProvider>
     </ThemeProvider>
   );
 }

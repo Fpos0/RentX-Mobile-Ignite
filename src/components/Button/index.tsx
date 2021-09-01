@@ -10,14 +10,15 @@ import {
 interface Props extends RectButtonProps {
   title: string;
   color?: string;
-  enabled?: boolean;
   loading?: boolean;
+  light?: boolean;
 }
 export function Button({
   title,
   color,
   enabled = true,
   loading = false,
+  light = false,
   ...rest
 }: Props) {
   const theme = useTheme();
@@ -35,7 +36,7 @@ export function Button({
             color={theme.colors.shape}
           />
           :
-          <Title>
+          <Title light={light}>
             {title}
           </Title>
       }
