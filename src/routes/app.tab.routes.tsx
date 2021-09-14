@@ -17,6 +17,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 export function AppTabRoutes() {
   const theme = useTheme();
+
   return (
     <Navigator
       tabBarOptions={{
