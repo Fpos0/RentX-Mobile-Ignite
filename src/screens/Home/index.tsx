@@ -41,21 +41,23 @@ export function Home() {
     await synchronize({
       database,
       pullChanges: async ({ lastPulledAt }) => {
-        const response = await api
-          .get(`cars/sync/pull?lastPulledVersion=${lastPulledAt || 0}`);
-
+        const response = await api.get(
+          `cars/sync/pull?lastPulledVersion=${lastPulledAt || 0}`
+        )
         const { changes, latestVersion } = response.data;
-
-        // console.log('BACKEND PARA APP');
+        // console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SYNC');
         // console.log(changes);
 
         return { changes, timestamp: latestVersion }
       },
       pushChanges: async ({ changes }) => {
+
         const user = changes.users;
-        await api.post('/users/sync', user);
-      },
-    });
+        console.log('%%%%%%%%%%%%%% USER   %%%%%%%%%%%%%%%%% ');
+        console.log(user);
+        await api.post('/users/sync', user).catch(console.log);
+      }
+    })
   }
 
   useEffect(() => {
@@ -65,7 +67,7 @@ export function Home() {
         const carCollection = database.get<ModelCar>('cars');
         const cars = await carCollection.query().fetch();
         // const response = await api.get('/cars');
-
+        // console.log(cars)
 
         if (isMounted) {
           setCars(cars);
