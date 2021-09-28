@@ -46,14 +46,14 @@ export function Home() {
         )
         const { changes, latestVersion } = response.data;
         // console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SYNC');
-        // console.log(changes);
+        console.log(changes);
 
         return { changes, timestamp: latestVersion }
       },
       pushChanges: async ({ changes }) => {
 
         const user = changes.users;
-        console.log('%%%%%%%%%%%%%% USER   %%%%%%%%%%%%%%%%% ');
+        console.log('%%%%%%%%%%%%%%   USER   %%%%%%%%%%%%%%%%% ');
         console.log(user);
         await api.post('/users/sync', user).catch(console.log);
       }
@@ -88,13 +88,11 @@ export function Home() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   if (netInfo.isConnected) {
-  //     Alert.alert('Você está online!')
-  //   } else {
-  //     Alert.alert('Você está off-line')
-  //   }
-  // }, [netInfo.isConnected])
+  useEffect(() => {
+    if (netInfo.isConnected === true) {
+      offlineSynchronize();
+    }
+  }, [netInfo.isConnected])
   return (
     <Container>
       <StatusBar
