@@ -45,7 +45,7 @@ export function Home() {
           `cars/sync/pull?lastPulledVersion=${lastPulledAt || 0}`
         )
         const { changes, latestVersion } = response.data;
-        // console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SYNC');
+        console.log('%%%%%%%%%%%%% SYNC %%%%%%%%%%%%%%%%%% ');
         console.log(changes);
 
         return { changes, timestamp: latestVersion }
